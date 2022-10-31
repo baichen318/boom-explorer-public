@@ -1,0 +1,63 @@
+# Author: baichen318@gmail.com
+
+
+# working mode: online/offline
+# NOTICE: online mode is not public for now
+mode: offline
+
+
+# design space specification
+design-space: configs/boom-design-space/design-space.xlsx
+
+
+# chipyard path specification, currently this part will be open-sourced in the future
+vlsi-flow:
+  chipyard-root: /path/to/chipyard
+  parallel: 8
+  vlsi-hammer-config: /path/to/floorplan.yml
+  benchmarks:
+    - dhrystone
+    - whetstone
+  vlsi-log: /path/to/log
+  report: /path/to/report
+
+
+# dataset, a look-up table is constructed
+# to compare the performance of algorithms
+# more efficiently
+dataset:
+  # the dataset path specification (demo.csv is for demo illustration)
+  path: dataset/demo.csv
+
+
+# MicroAL settings
+initialize:
+  Nrted: 5
+  mu: 0.1
+  sig: 0.1
+  # the total samples in a cluster
+  batch: 20
+  decoder-threshold: 35
+  # number for clusters
+  cluster: 5
+  # the iterations of the clustering
+  clustering-iteration: 1000
+  vis-micro-al: False
+
+# bayesian optimization settings
+bo:
+  # the maximal optimization steps
+  max-bo-steps: 30
+
+
+# DKL-GP settings
+dkl-gp:
+  # the MLP output dimension specification
+  mlp-output-dim: 6
+  # the learning rate for DKL-GP
+  learning-rate: 0.001
+  # the maximal training epochs
+  max-traininig-epoch: 1000
+
+report:
+  path: rpts
