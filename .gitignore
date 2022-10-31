@@ -130,7 +130,7 @@ dmypy.json
 
 *.sw*
 *.jpg
-*.png
+# *.png
 models/
 .tags_sorted_by_file
 .tags
