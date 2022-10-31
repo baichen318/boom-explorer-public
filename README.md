@@ -14,16 +14,16 @@ $ python main.py -c configs/boom-explorer.yml
 
 ## The overview of BOOM-Explorer
 
-![The overview of BOOM-Explorer](figs/boom-explorer-flow.pdf)
+![The overview of BOOM-Explorer](https://github.com/baichen318/boom-explorer-public/blob/master/figs/boom-explorer-flow.pdf)
 
 
 ## Clustring w.r.t. the DecodeWidth
 
-![The pre-clustering w.r.t. the DecodeWidth](figs/clustering-wrt-decode-width.pdf)
+![The pre-clustering w.r.t. the DecodeWidth](https://github.com/baichen318/boom-explorer-public/blob/master/figs/clustering-wrt-decode-width.pdf)
 
 ## Predicted Pareto Frontier
 
-![The prediction of Pareto frontier](figs/predicted-pareto-frontier.pdf)
+![The prediction of Pareto frontier](https://github.com/baichen318/boom-explorer-public/blob/master/figs/predicted-pareto-frontier.pdf)
 
 
 ## TODO
