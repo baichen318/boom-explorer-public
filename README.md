@@ -1,5 +1,5 @@
 # BOOM-Explorer
-BOOM Explorer: RISC-V BOOM Microarchitecture Design Space Exploration
+BOOM Explorer: RISC-V BOOM Microarchitecture Design Space Exploration [(paper)](https://ieeexplore.ieee.org/document/9643455)
 
 
 ## Usage
@@ -11,6 +11,20 @@ $ python main.py -h
 ```bash
 $ python main.py -c configs/boom-explorer.yml
 ```
+
+## The overview of BOOM-Explorer
+
+![The overview of BOOM-Explorer](figs/boom-explorer-flow.pdf)
+
+
+## Clustring w.r.t. the DecodeWidth
+
+![The pre-clustering w.r.t. the DecodeWidth](figs/clustering-wrt-decode-width.pdf)
+
+## Predicted Pareto Frontier
+
+![The prediction of Pareto frontier](figs/predicted-pareto-frontier.pdf)
+
 
 ## TODO
 - Refine the documentation
