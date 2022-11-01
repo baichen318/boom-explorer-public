@@ -32,7 +32,7 @@ dataset:
 
 # MicroAL settings
 initialize:
-  Nrted: 5
+  Nrted: 59
   mu: 0.1
   sig: 0.1
   # the total samples in a cluster
