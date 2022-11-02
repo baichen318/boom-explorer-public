@@ -38,6 +38,9 @@ $ python main.py -c configs/boom-explorer.yml
 ## Misc.
 
 Please cite this work if you have used this project.
+
+Thanks to our contributors [Qi Sun](http://qisunchn.top/), [Jianwang Zhai](https://scholar.google.com/citations?user=AygeGOcAAAAJ&hl=zh-CN), [Yuzhe Ma](https://yuzhe630.github.io/)
+
 ```
 @inproceedings{Arch-2021ICCAD-BOOM-Explorer,
   title={{BOOM-Explorer: RISC-V BOOM Microarchitecture Design Space Exploration Framework}},
