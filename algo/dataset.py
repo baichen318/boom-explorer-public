@@ -44,7 +44,7 @@ def load_dataset(path: str, preprocess=True) -> Tuple[np.ndarray, np.ndarray]:
     x = []
     y = []
     for data in dataset:
-        x.append(data[:-2])
+        x.append(data[:-3])
         y.append(np.array([data[-3], data[-2], data[-1]]))
     return np.array(x), np.array(y)
 
