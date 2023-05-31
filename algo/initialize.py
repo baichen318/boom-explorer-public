@@ -156,8 +156,8 @@ class MicroAL(RandomizedTED):
 
     def initialize(self, dataset: np.ndarray) -> List[List[int]]:
         # NOTICE: `rted` may select duplicated points,
-        # in order to avoid this problem, we delete 80%
-        # some points randomly
+        # in order to avoid this problem, we delete
+        # duplicated points randomly
         def _delete_duplicate(vec):
             """
                 `vec`: <list>
@@ -185,7 +185,14 @@ class MicroAL(RandomizedTED):
                     candidates = c
                 for _c in candidates:
                     x.append(_c)
+                l = len(x)
                 x = _delete_duplicate(x)
+                if len(x) == l:
+                    """
+                        A bug fix, please refer it to:
+                        https://github.com/baichen318/boom-explorer-public/issues/2
+                    """
+                    break
             for _x in x:
                 sampled_data.append(_x)
         return sampled_data
